@@ -55,7 +55,7 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+        <img class="img-fluid mb-5 d-block mx-auto img-rounded" src="img/image.png" alt="">
         <h1 class="text-uppercase mb-0">Satyam Patro</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Web Developer</h2>
@@ -207,11 +207,11 @@
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
-          <!-- <div class="col-md-4 mb-5 mb-lg-0">
+          <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
-          </div> -->
+            <p class="lead mb-0">Mumbai, Mahrashtra
+              <br>India</p>
+          </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
             <ul class="list-inline mb-0">
@@ -407,8 +407,8 @@
     <script>
     	function saveToFirebase(contact) {
 		    var contactObject = {
-		    	name: name,
-		        email: email,
+		    	      name: name,
+		            email: email,
                 phone: phone,
                 message: message
 		    };
@@ -420,7 +420,7 @@
 		            console.log('error' + error);
 		            error(); // some error method
 		        });
-		}
+		    }
        saveToFirebase(contact);
 	  // Initialize Firebase
 	  var config = {
