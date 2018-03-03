@@ -56,7 +56,7 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-        <h1 class="text-uppercase mb-0">Satyam Parto</h1>
+        <h1 class="text-uppercase mb-0">Satyam Patro</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Web Developer</h2>
       </div>
@@ -421,14 +421,15 @@
 		            error(); // some error method
 		        });
 		}
+       saveToFirebase(contact);
 	  // Initialize Firebase
 	  var config = {
-	    apiKey: "AIzaSyBT-4jb6eUZOaNnUNF29UxV6SffgqjUH9g",
-	    authDomain: "portfoilo-6b23e.firebaseapp.com",
-	    databaseURL: "https://portfoilo-6b23e.firebaseio.com",
-	    projectId: "portfoilo-6b23e",
+	    apiKey: "process.env.API_KEY",
+	    authDomain: "process.env.AUTH_DOMAIN",
+	    databaseURL: "process.env.DATABASE_URL",
+	    projectId: "process.env.PROJECT_ID",
 	    storageBucket: "",
-	    messagingSenderId: "714650424482"
+	    messagingSenderId: "process.env.MSG_SENDER_ID"
 	  };
 	  firebase.initializeApp(config);
 	</script>
