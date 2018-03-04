@@ -23,16 +23,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90616451-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-90616451-2');
-    </script>
-
 
   </head>
 
@@ -65,8 +55,8 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto img-rounded" src="img/image.png" alt="">
-        <h1 class="text-uppercase mb-0">Satyam Patro</h1>
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+        <h1 class="text-uppercase mb-0">Satyam Parto</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Web Developer</h2>
       </div>
@@ -149,10 +139,10 @@
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">I am a Computer Engineering student, and soon to be a professional web developer. I love web development, technology, and building stuff for internet.</p>
+            <p class="lead">I am a Computer Science Student, and soon to be web developer. I love web development, technology, and building stuff for internet.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">I have working experience with HTML/CSS and Javascript and it's libraries like Jquery and frameworks like Bootstrap and Angular, on backend nodejs/expressjs and non-relational DBMS like MongoDB.</p>
+            <p class="lead">I'm a aspiring Full Stack Web Developer. I have working experience with HTML/CSS and Javascript and it's libraries like Jquery and frameworks like Bootstrap and Angular, on backend nodejs/expressjs with a non-relational database like mongoDB.</p>
           </div>
         </div>
         <div class="text-center mt-4">
@@ -173,7 +163,7 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate" action="mail/contact_me.php">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -217,11 +207,11 @@
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
+          <!-- <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">Mumbai, Mahrashtra
-              <br>India</p>
-          </div>
+            <p class="lead mb-0">2215 John Daniel Drive
+              <br>Clark, MO 65243</p>
+          </div> -->
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
             <ul class="list-inline mb-0">
@@ -414,37 +404,36 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-   <!--  <script>
-    	function saveToFirebase(contact) {
-		    var contactObject = {
-		    	      name: name,
-		            email: email,
+    <!-- <script>
+      function saveToFirebase(contact) {
+        var contactObject = {
+          name: name,
+            email: email,
                 phone: phone,
                 message: message
-		    };
+        };
 
-		    firebase.database().ref('contact-entries').push().set(contactObject)
-		        .then(function(snapshot) {
-		            success(); // some success method
-		        }, function(error) {
-		            console.log('error' + error);
-		            error(); // some error method
-		        });
-		    }
-       saveToFirebase(contact);
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "process.env.API_KEY",
-	    authDomain: "process.env.AUTH_DOMAIN",
-	    databaseURL: "process.env.DATABASE_URL",
-	    projectId: "process.env.PROJECT_ID",
-	    storageBucket: "",
-	    messagingSenderId: "process.env.MSG_SENDER_ID"
-	  };
-	  firebase.initializeApp(config);
-	</script> -->
+        firebase.database().ref('contact-entries').push().set(contactObject)
+            .then(function(snapshot) {
+                success(); // some success method
+            }, function(error) {
+                console.log('error' + error);
+                error(); // some error method
+            });
+    }
+    saveToFirebase(contact);
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBT-4jb6eUZOaNnUNF29UxV6SffgqjUH9g",
+      authDomain: "portfoilo-6b23e.firebaseapp.com",
+      databaseURL: "https://portfoilo-6b23e.firebaseio.com",
+      projectId: "portfoilo-6b23e",
+      storageBucket: "",
+      messagingSenderId: "714650424482"
+    };
+    firebase.initializeApp(config);
+  </script> -->
 
   </body>
 
 </html>
-
