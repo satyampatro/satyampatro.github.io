@@ -163,7 +163,7 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate" action="mail/contact_me.php">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate" action="http://formspree.io/satyampatro077@gmail.com">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -403,37 +403,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <!-- <script>
-      function saveToFirebase(contact) {
-        var contactObject = {
-          name: name,
-            email: email,
-                phone: phone,
-                message: message
-        };
-
-        firebase.database().ref('contact-entries').push().set(contactObject)
-            .then(function(snapshot) {
-                success(); // some success method
-            }, function(error) {
-                console.log('error' + error);
-                error(); // some error method
-            });
-    }
-    saveToFirebase(contact);
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBT-4jb6eUZOaNnUNF29UxV6SffgqjUH9g",
-      authDomain: "portfoilo-6b23e.firebaseapp.com",
-      databaseURL: "https://portfoilo-6b23e.firebaseio.com",
-      projectId: "portfoilo-6b23e",
-      storageBucket: "",
-      messagingSenderId: "714650424482"
-    };
-    firebase.initializeApp(config);
-  </script> -->
-
   </body>
 
 </html>
