@@ -173,7 +173,7 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate" onsubmit="saveToFirebase(this);">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -414,7 +414,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <script>
+   <!--  <script>
     	function saveToFirebase(contact) {
 		    var contactObject = {
 		    	      name: name,
@@ -442,7 +442,7 @@
 	    messagingSenderId: "process.env.MSG_SENDER_ID"
 	  };
 	  firebase.initializeApp(config);
-	</script>
+	</script> -->
 
   </body>
 
