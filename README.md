@@ -1,4 +1,4 @@
 # Dev Portfolio
 
-Cloned from [click here](https://ryanfitzgerald.github.io/devportfolio/).
+Cloned from [click here](https://github.com/RyanFitzgerald/devportfolio).
 
